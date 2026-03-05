@@ -24,7 +24,7 @@ jobs:
         run: ls -la
 
       - name: print the runner's operating system
-        run: echo "runner OS is $RUNNER_OS"
+        run: echo "runner OS is ${{ runner.os }}"
 
     
 
