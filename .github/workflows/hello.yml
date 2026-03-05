@@ -23,7 +23,7 @@ jobs:
       - name: List the files in the repo
         run: ls -la
 
-      - name: Print the runner's operating system
+      - name: print the runner's operating system
         run: echo "runner OS is $RUNNER_OS"
 
     
