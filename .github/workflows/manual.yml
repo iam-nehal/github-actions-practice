@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: select environment name (main or feature-pr-test)
+        description: select environment name (staging or production)
         required: true
         type: choice
         options:
-          - main
-          - feature-pr-test
+          - production
+          - staging
 
 jobs:
   manual-job:
