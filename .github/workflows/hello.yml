@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '*/2 * * * *' #runs every 2min
+    - cron: '*/5 * * * *' #runs every 5min
 
 
 jobs:
