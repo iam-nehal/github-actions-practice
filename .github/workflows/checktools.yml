@@ -1,0 +1,23 @@
+name: Check preinstalled tools 
+
+on:
+  push:
+  workflow_dispatch:
+
+
+jobs:
+    
+  tools-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check Docker version
+        run: docker --version
+      - name: check Python version
+        run: python --version
+      - name: check Node version
+        run: node --version
+      - name: check Git version
+        run: git --version
+        
+        
+
