@@ -3,6 +3,9 @@ name: hello
 on:
   push:
   workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *' #run every day at midnight
+
 
 jobs:
   greet:
