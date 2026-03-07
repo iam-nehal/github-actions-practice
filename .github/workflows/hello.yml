@@ -30,7 +30,8 @@ jobs:
       - name: print runner operating system
         run: echo "runner OS is ${{ runner.os }}"
 
-    
+      - name: show trigger
+        run: echo "Triggered by ${{ github.event_name }}"
 
 
                
