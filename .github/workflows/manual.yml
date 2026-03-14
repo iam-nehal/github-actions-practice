@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: show selected environment
-        run: echo "Workflow run in environment:${{ github.event.inputs.environment}}"          
+        run: echo "Workflow run in environment:${{ github.event.inputs.environment}}"
