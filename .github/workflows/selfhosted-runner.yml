@@ -1,0 +1,17 @@
+name: self-hosted runners
+
+on:
+  # push:
+  workflow_dispatch:
+
+jobs:
+  
+  ubuntu-job:
+    runs-on: self-hosted
+    steps:
+      - name: OS name
+        run: echo "Runner OS name is $RUNNER_OS"
+      - name: show runner hostname
+        run: hostname
+      - name: show current user
+        run: whoami

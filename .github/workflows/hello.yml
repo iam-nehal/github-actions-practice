@@ -1,7 +1,7 @@
 name: hello
 
 on:
-  push:
+  # push:
   workflow_dispatch:
   schedule:
 #    - cron: '*/5 * * * *' #runs every 5min
